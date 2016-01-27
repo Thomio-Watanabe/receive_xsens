@@ -20,7 +20,7 @@ and is intended for use only by Xsens Technologies BV and
 extern "C"
 int setSerialKey()
 {
-	if (strcmp(SERIAL_KEY, "enter serial key here") == 0)
+	/*if (strcmp(SERIAL_KEY, "enter serial key here") == 0)
 	{
 		{
 			char serialKey[256];
@@ -54,5 +54,7 @@ int setSerialKey()
 		}
 		return 0;
 	}
-	return XsControl::setSerialKey(SERIAL_KEY);
+	return XsControl::setSerialKey(SERIAL_KEY);*/
+	
+	return true;
 }
