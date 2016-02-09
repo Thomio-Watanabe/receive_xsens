@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
 )
 
+find_package(XSens REQUIRED)
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -43,6 +44,5 @@ add_executable(receive_xsens src/main.cpp src/console.cpp src/conio.c src/myxda.
 ## Specify libraries to link a library or executable target against
 target_link_libraries(receive_xsens
   ${catkin_LIBRARIES}
-  xsensdeviceapi
-  xstypes
+  ${XSens_LIBRARIES}
 )
