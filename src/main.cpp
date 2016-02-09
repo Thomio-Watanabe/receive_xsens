@@ -185,10 +185,10 @@ int main(int argc, char** argv)
 
 						XsQuaternion quaternion = packet.orientationQuaternion();
 
-						imuData.orientation.x = quaternion.m_x;
-						imuData.orientation.y = quaternion.m_y;
-						imuData.orientation.z = quaternion.m_z;
-						imuData.orientation.w = quaternion.m_w;
+						imuData.orientation.x = quaternion.x();
+						imuData.orientation.y = quaternion.y();
+						imuData.orientation.z = quaternion.z();
+						imuData.orientation.w = quaternion.w();
 					}
 
 					// Get the gyroscope data
